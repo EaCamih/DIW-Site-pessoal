@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    @apply scrollbar-track-neutral-800 scrollbar-thumb-purple-500 scrollbar-thin;
+}
+
+body {
+    @apply bg-neutral-900 text-white;
+}
+
+header .content {
+    @apply flex flex-row justify-between
+    w-full
+    p-3 text-xl uppercase;
+}
+
+header .content .sections {
+    @apply flex flex-row gap-2 md:gap-4;
+}
+
+header .content .sections .section {
+    @apply hover:bg-neutral-700 transition-all duration-200
+    flex items-center
+    text-sm md:text-xl
+    px-3 py-2 md:px-3 md:py-1 rounded-xl;
+}
+
+header .content .name {
+    @apply bg-neutral-700 text-neutral-200 rounded-xl
+    px-4 py-1 md:px-12 md:py-2
+    font-semibold text-sm md:text-2xl;
+}
+
+.part {
+    @apply text-3xl font-semibold
+    mt-12 p-2 md:p-12;
+}
+
+.title h1 {
+    @apply my-3;
+}
+
+hr {
+    @apply h-1 mx-auto my-4 bg-neutral-700 border-0 rounded;
+}
+
+.profile .content {
+    @apply flex flex-col md:flex-row gap-12;
+}
+
+.profile img {
+    @apply place-self-center w-[30%] h-fit rounded-xl md:rounded-full
+    md:w-[10%] md:place-self-start;
+}
+
+.profile .info {
+    @apply flex flex-col gap-6 w-full;
+}
+
+.profile .info .name {
+    @apply font-bold text-4xl;
+}
+
+.profile .info .description {
+    @apply font-light text-xl;
+}
+
+.profile .info .extras {
+    @apply text-xl;
+}
+
+.profile .info .extras span {
+    @apply font-normal cursor-pointer
+    hover:text-purple-500 transition-all duration-150
+    underline;
+}
+
+.profile .info .extras a {
+    @apply font-normal cursor-pointer
+    hover:text-purple-500 transition-all duration-150
+    underline;
+}
+
+.profile .info .informations {
+    @apply flex flex-row justify-between;
+}
+
+.profile .info .informations .social-media {
+    @apply flex flex-row gap-4;
+}
+
+.views {
+    @apply flex flex-row gap-2 items-center;
+}
+
+.fa{
+    @apply cursor-pointer;
+}
+
+.fa-brands {
+    @apply hover:text-purple-500 transition-all duration-150;
+}
+
+.repos {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6;
+}
+
+.repo {
+    @apply flex flex-col gap-2
+    bg-neutral-800 p-4 rounded-xl
+    cursor-pointer;
+}
+
+.repo h1 {
+    @apply text-3xl font-bold;
+}
+
+.repo p {
+    @apply text-xl font-light;
+}
+
+.repo .status {
+    @apply flex flex-row justify-between;
+}
+
+.repo .status i {
+    @apply text-xl px-3
+    hover:bg-purple-500 transition-all duration-200
+    rounded-xl cursor-pointer;
+}
+
+.repo .status span {
+    @apply text-xl pl-3 font-light bg-transparent;
+}
+
+.car {
+    @apply w-[85%] xl:w-[50%] mx-auto rounded-2xl overflow-hidden;
+}
+
+.carousel-caption {
+    @apply drop-shadow-xl bg-black/30 rounded-xl;
+}
+
+.carousel-caption p {
+    @apply text-base;
+}
+
+.car .botoes {
+    @apply relative bottom-[237px] justify-between items-center flex;
+}
+
+.button-yes {
+    @apply bg-neutral-800/70 rounded-full p-5 justify-center items-center;
+}
+
+.carousel-control-prev i {
+    @apply mx-2 w-12 h-12 bg-neutral-800/70 rounded-full flex items-center justify-center;
+}
+
+.carousel-control-next i {
+    @apply mx-2 w-12 h-12 bg-neutral-800/70 rounded-full flex items-center justify-center;
+}
+
+.team {
+    @apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5
+    w-fit mx-auto
+    gap-12 justify-center;
+}
+
+.person {
+    @apply flex flex-col gap-4 items-center w-fit
+    place-self-center
+    cursor-pointer
+    p-4 bg-neutral-800 rounded-xl
+    hover:scale-110 transition-all duration-200
+    hover:text-purple-500;
+}
+
+.person img {
+    @apply h-32 rounded-full
+}
+
+.person p {
+    @apply text-lg font-thin;
+}
+
+.content .repo-desc p {
+    @apply text-lg font-normal;
+}
+
+.repo-info {
+    @apply flex flex-row justify-between
+    mt-12;
+}
+
+.repo-info .informations {
+    @apply flex flex-col gap-4
+}
+
+.repo-info p {
+    @apply text-lg
+    hover:text-purple-500 duration-200;
+}
+
+.repo-info a {
+    @apply text-lg
+    hover:text-purple-500 duration-200 underline;
+}
+
+.repo-info .topics .items {
+    @apply flex flex-row gap-3;
+}
+
+.repo-info .topics .items p {
+    @apply hover:bg-purple-500 duration-200 text-white
+    px-3 py-0.5 rounded-xl
+    mt-2;
+}
+
+.repo-info .status {
+    @apply flex flex-col gap-5;
+}
+
+.repo-info .status i {
+    @apply text-2xl;
+}
+
+.repo-info .status span {
+    @apply text-2xl mx-2;
+}
