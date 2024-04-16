@@ -12,6 +12,10 @@ body {
     @apply bg-neutral-900 text-white;
 }
 
+header {
+    @apply bg-black/50;
+}
+
 header .content {
     @apply flex flex-row justify-between
     w-full
@@ -231,4 +235,16 @@ hr {
 
 .repo-info .status span {
     @apply text-2xl mx-2;
+}
+
+footer {
+    @apply bg-black/50 p-12 flex flex-col justify-center items-center gap-2;
+}
+
+footer h1 {
+    @apply text-3xl
+}
+
+footer a {
+    @apply hover:text-purple-500 duration-200 transition-all underline;
 }
