@@ -11,49 +11,47 @@
 <body>
     <header>
         <div class="content">
-            <h1 class="name">Camilla</h1>
+            <a href="index.html"><h1 class="name">Camilla</h1></a>
             <div class="sections">
-                <a href="#" class="section">Link 1</a>
-                <a href="#" class="section">Link 2</a>
-                <a href="#" class="section">Link 3</a>
+                <a class="section" id="headerCommits">Commits</a>
+                <a class="section" id="headerIssues">Issues</a>
+                <a class="section" id="headerInsights">Insights</a>
             </div>
         </div>
     </header>
     <body>
         <div class="profile part">
-            <h1 class="title">Repositorio: exemplo</h1>
+            <h1 class="title" id="repoTitle">Carregando...</h1>
             <hr>
             <div class="content">
                 <div class="repo-desc">
                     <h1>Descrição</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati iste dolorem et corrupti nisi laboriosam animi, voluptates a eos voluptas, modi at cum odit fuga, perferendis sit illo ex doloremque magni doloribus deserunt quod! Quasi architecto blanditiis minus eligendi inventore facere necessitatibus magnam nobis, cumque, fugiat minima sunt quas temporibus neque rerum illum aliquid omnis. Sequi sunt delectus tenetur, velit corrupti repudiandae non assumenda necessitatibus sed dolorem ratione labore, explicabo ab natus veniam quod. Cupiditate fuga ex tenetur. Magnam facere consequatur velit aperiam saepe eius voluptas ratione repellat laboriosam soluta. Asperiores consectetur iste recusandae amet officiis aliquam accusantium non magnam?</p>
+                    <p id="repoDesc">Carregando dados do repositório.</p>
                 </div>
             </div>
             <div class="repo-info">
                 <div class="informations">
                     <div class="date">
                         <h2>Data de criação</h2>
-                        <p>2024-04-14</p>
+                        <p id="repoCreationDate"></p>
                     </div>
                     <div class="lang">
                         <h2>Linguagem</h2>
-                        <p>C#</p>
+                        <p id="repoMainLang"></p>
                     </div>
                     <div class="link">
                         <h2>Link de acesso</h2>
-                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link</a>
+                        <a id="repoLink">Link</a>
                     </div>
                     <div class="topics">
                         <h2>Tópicos</h2>
-                        <div class="items">
-                            <p>Javascript</p>
-                            <p>Back-End</p>
+                        <div class="items" id="repoTopics">
                         </div>
                     </div>
                 </div>
                 <div class="status">
-                    <i class="fa-solid fa-star"><span>24</span></i>
-                    <i class="fa-solid fa-user"><span>12</span></i>
+                    <i class="fa-solid fa-star"><span id="repoStars"></span></i>
+                    <i class="fa-solid fa-user"><span id="repoWatchers"></span></i>
                 </div>
             </div>
         </div>
@@ -62,6 +60,7 @@
         <h1>Made by: <a href="https://github.com/EaCamih">Camilla V.</a></h1>
         <p>© 2024 Todos os direitos reservados.</p>
     </footer>
+    <script src="repo.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

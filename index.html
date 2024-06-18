@@ -11,11 +11,11 @@
 <body>
     <header>
         <div class="content">
-            <h1 class="name">Camilla</h1>
+            <h1 class="name" id="headerName"></h1>
             <div class="sections">
-                <a href="#" class="section">Profile</a>
-                <a href="#" class="section">Repos</a>
-                <a href="#" class="section">Team</a>
+                <a class="section" id="headerProfile">Profile</a>
+                <a class="section" id="headerRepos">Repos</a>
+                <a class="section" id="headerFollowers">Followers</a>
             </div>
         </div>
     </header>
@@ -24,13 +24,13 @@
             <h1 class="title">Perfil</h1>
             <hr>
             <div class="content">
-                <img src="https://avatars.githubusercontent.com/u/70085700?v=4 " alt="Imagem perfil">
+                <img src="" alt="Imagem perfil" id="profileAvatar">
                 <div class="info">
-                    <div class="name">Camilla Viana Moraes</div>
-                    <div class="description">20 y.o 💜 Brazilian - [Pt, En, Es, Ru] 💜 Software Engineer - Learning since 2016 💜 Kazami bot founder & dev 💜</div>
+                    <div class="name" id="profileName"></div>
+                    <div class="description" id="profileDescription"></div>
                     <div class="extras">
-                        <p>Location: <span>Minas Gerais - Belo Horizonte</span></p>
-                        <p>Site: <a href="https://kazami.xyz/">https://kazami.xyz/</a></p>
+                        <p>Location: <span id="profileLocation"></span></p>
+                        <p>Site: <a id="profileBlog"></a></p>
                     </div>
                     <div class="informations">
                         <div class="social-media">
@@ -40,7 +40,7 @@
                         </div>
                         <div class="views">
                             <i class="fa fa-solid fa-user"></i>
-                            <p>123</p>
+                            <p id="profileFollowers">123</p>
                         </div>
                     </div>
                 </div>
@@ -48,67 +48,10 @@
         </div>
         <div class="repositorios part">
 
-            <h1 class="title">Repositórios (7)</h1>
+            <h1 class="title" id="reposTitle">Carregando...</h1>
             <hr>
 
-            <div class="repos">
-                <a class="repo" href="repo.html">
-                    <h1>Title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa voluptas quisquam reprehenderit consectetur, at laudantium.</p>
-                    <div class="status">
-                        <i class="fa-solid fa-star"><span>27</span></i>
-                        <i class="fa-solid fa-user"><span>2</span></i>
-                    </div>
-                </a>
-                <a class="repo" href="repo.html">
-                    <h1>Title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa voluptas quisquam reprehenderit consectetur, at laudantium.</p>
-                    <div class="status">
-                        <i class="fa-solid fa-star"><span>43</span></i>
-                        <i class="fa-solid fa-user"><span>7</span></i>
-                    </div>
-                </a>
-                <a class="repo" href="repo.html">
-                    <h1>Title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa voluptas quisquam reprehenderit consectetur, at laudantium.</p>
-                    <div class="status">
-                        <i class="fa-solid fa-star"><span>85</span></i>
-                        <i class="fa-solid fa-user"><span>69</span></i>
-                    </div>
-                </a>
-                <a class="repo" href="repo.html">
-                    <h1>Title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa voluptas quisquam reprehenderit consectetur, at laudantium.</p>
-                    <div class="status">
-                        <i class="fa-solid fa-star"><span>32</span></i>
-                        <i class="fa-solid fa-user"><span>70</span></i>
-                    </div>
-                </a>
-                <a class="repo" href="repo.html">
-                    <h1>Title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa voluptas quisquam reprehenderit consectetur, at laudantium.</p>
-                    <div class="status">
-                        <i class="fa-solid fa-star"><span>24</span></i>
-                        <i class="fa-solid fa-user"><span>12</span></i>
-                    </div>
-                </a>
-                <a class="repo" href="repo.html">
-                    <h1>Title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa voluptas quisquam reprehenderit consectetur, at laudantium.</p>
-                    <div class="status">
-                        <i class="fa-solid fa-star"><span>36</span></i>
-                        <i class="fa-solid fa-user"><span>41</span></i>
-                    </div>
-                </a>
-                <a class="repo" href="repo.html">
-                    <h1>Title</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa voluptas quisquam reprehenderit consectetur, at laudantium.</p>
-                    <div class="status">
-                        <i class="fa-solid fa-star"><span>32</span></i>
-                        <i class="fa-solid fa-user"><span>11</span></i>
-                    </div>
-                </a>
-            </div>
+            <div class="repos" id="repos"></div>
         </div>
         <div class="sugerido part">
 
@@ -176,34 +119,14 @@
             <h1 class="title">Colegas de trabalho</h1>
             <hr>
 
-            <div class="team">
-                <a href="https://github.com/DGBBraga" class="person">
-                    <img src="https://avatars.githubusercontent.com/u/119761586?v=4" alt="">
-                    <p>Diogo</p>
-                </a>
-                <a href="https://github.com/GabrielRMA1" class="person">
-                    <img src="https://avatars.githubusercontent.com/u/166343479?v=4" alt="">
-                    <p>Gabriel</p>
-                </a>
-                <a href="https://github.com/srbouleto" class="person">
-                    <img src="https://avatars.githubusercontent.com/u/164224207?v=4" alt="">
-                    <p>João</p>
-                </a>
-                <a href="https://github.com/LeonardodeSouzaGalvao" class="person">
-                    <img src="https://avatars.githubusercontent.com/u/160603231?v=4" alt="">
-                    <p>Leonardo</p>
-                </a>
-                <a href="https://github.com/piterofc" class="person">
-                    <img src="https://avatars.githubusercontent.com/u/60991403?v=4" alt="">
-                    <p>Pedro</p>
-                </a>
-            </div>
+            <div class="team" id="team"></div>
         </div>
     </body>
     <footer>
         <h1>Made by: <a href="https://github.com/EaCamih">Camilla V.</a></h1>
         <p>© 2024 Todos os direitos reservados.</p>
     </footer>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
